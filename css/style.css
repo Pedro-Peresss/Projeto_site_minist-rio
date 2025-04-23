@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://db.onlinewebfonts.com/c/8d978df77a682ad84086496d375273fa?family=Concord+W00+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+main {
+    overflow-x: hidden;
+    /* background-color: #010813; */
+    background-color: #0f0f0f;
+    width: 100%;
+}
+
+header {
+    height: 60px;
+    background-color: #000000;
+    background-image: linear-gradient(to top, #b1f8f8 1%, transparent 20%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 5%;
+    z-index: 2;
+    transition: top 0.3s ease;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(185, 253, 253, 0.7), transparent 80%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.logo img { 
+    height: 100px; /* mesmo tamanho da imagem */
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    transition: transform 0.3s ease;
+}
+
+.botao:hover {
+    transform: scale(0.8);
+}
+
+.botao {
+    max-height: 50px;
+    background-color: #000000;
+    color: rgb(202, 168, 75);
+    font-family: "Concord W00 Regular";
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px;
+    border-top: 4px;
+    border-style: solid;
+    border-top-color: rgb(25, 150, 252);
+    border-radius: 50%;
+    border-bottom: 4px solid;
+    border-bottom-color: rgb(25, 150, 252);
+    border-left: none;
+    border-right: none;
+}
+
+
+.container-borda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px - 30px);
+    min-height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.borda-esquerda,
+.borda-direita {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 5%;
+    background-repeat: repeat-y;
+    background-size: auto 20%;
+    background-position: top center;
+    z-index: 0;
+    opacity: 0.9;
+}
+
+footer {
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    z-index: 3;
+}
+
+.imagem-principal,
+.imagem-principal-ministerios {
+    position: relative;
+    z-index: 1;
+}
+
+.borda-esquerda {
+    left: 0;
+    background-image: url(../imagens/borda-esquerda.png);
+}
+
+.borda-direita {
+    right: 0;
+    width: 4.5%;
+    background-image: url(../imagens/borda-direita.png);
+}
+
+.conteudo-interno {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-family: "Goblin One", serif;
+    color: rgb(202, 168, 75);
+    text-align: center;
+    padding: 0 5%;
+    text-shadow: 4px 5px 1px black;
+}
+
+.imagem-principal {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: url(../imagens/pastor-viajem.jpg) center/cover no-repeat;
+    height: 500px;
+    width: 100%;
+}
+
+
+.texto,
+.texto-final {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    color: #ffffff;
+    line-height: 1.6;
+
+}
+
+
+
+.frase-final {
+    font-family: "Goblin One", serif;
+    color: rgb(202, 168, 75);
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 4px 5px 1px black;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 25px;
+}
+
+.video iframe {
+    max-width: 100%;
+}
+.container-fotos{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.tamanho-fotos{
+    max-width: 25%;
+    margin: 5px;
+    border: 2px solid rgb(202, 168, 75);
+}
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Goblin One", serif;
+    color: rgb(202, 168, 75);
+    text-align: center;
+    padding: 0 5%;
+    text-shadow: 4px 5px 1px black;
+}
+
+.botao-venha-conhecer {
+    display: block;
+    margin: 50px auto;
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgb(19, 2, 250), rgb(3, 238, 247));
+    color: #0f0f0f;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    font-family: "Goblin One", serif;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.botao-venha-conhecer:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(77, 75, 75, 0.7);
+    background: linear-gradient(to right, rgb(3, 238, 247), rgb(19, 2, 250));
+}
+
+.rodape {
+    background-color: #000000;
+    color: #f7f9fa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1px 5%;
+    font-size: 12px;
+}
+
+footer {
+    z-index: 2;
+}
+
+.imagem-principal-ministerios {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: url(../imagens/pastor-viajem.jpg) center/cover no-repeat;
+    height: 500px;
+    width: 100%;
+}
+
+
+
+.container-imagem {
+    position: relative;
+    width: 100%;
+    max-width: 905px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.container-titulo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 320px;
+    height: 169px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.imagem-ministerio img {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+}
+
+.container-imagem::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.titulo-ministerio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 3.5vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+}
+
+.container-texto-ministerios {
+    position: absolute;
+    top: 0;
+    left: 322px;
+    height: 176px;
+    width: calc(100% - 322px);
+    z-index: 1;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* Menu hamburguer para telas menores */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 100%;
+    background-color: #7cd2fa;
+    border-radius: 3px;
+}
+
+.botao-ministerio {
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    transition: top 0.3s ease;
+}
+
+.botao-ministerio:hover {
+    transform: scale(0.8);
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 1024px) {
+    .container-texto-ministerios {
+        left: 280px;
+        width: calc(100% - 280px);
+    }
+    .container-fotos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+    }
+    .tamanho-fotos{
+        min-width: 300px;
+    }
+    .final-pagina-inicial{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-imagem{
+        width: auto;
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .botoes {
+        gap: 15px;
+    }
+
+    .botao {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .container-imagem {
+        height: auto;
+    }
+
+    .container-titulo {
+        height: 140px;
+    }
+
+    .titulo-ministerio {
+        font-size: 5vw;
+    }
+
+    .container-texto-ministerios {
+        left: 0;
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.lista {
+    border: 2px solid rgb(202, 168, 75);
+    border-radius: 5px;
+    color: #000000;
+    margin: 45px;
+    background-color: rgba(255, 255, 255, 0.6);
+    list-style-type: none;
+}
+.lista li{
+    padding: 20px;
+    margin: 4px;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+strong {
+    color: rgb(202, 168, 75);
+    font-size: 20px;
+    font-family: "Concord W00 Regular";
+    text-shadow: 2px 2px 1px black;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 0 3%;
+    }
+
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .botoes {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: #000000;
+        padding: 10px 0;
+        gap: 10px;
+        display: none;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .botoes.active {
+        display: flex;
+    }
+
+    .botao {
+        width: 90%;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .borda-esquerda,
+    .borda-direita {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .titulo,
+    .subtitulo {
+        font-size: 20px;
+    }
+
+    .texto,
+    .texto-1,
+    .texto-2,
+    .texto-3,
+    .texto-final {
+        font-size: 16px;
+    }
+
+    .container-titulo {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .titulo-ministerio {
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+        padding: 15px;
+        font-size: 6vw;
+    }
+
+    .botao-venha-conhecer {
+        width: 80%;
+        font-size: 14px;
+    }
+}
