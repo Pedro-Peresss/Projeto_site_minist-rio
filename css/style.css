@@ -10,8 +10,7 @@
 
 main {
     overflow-x: hidden;
-    /* background-color: #010813; */
-    background-color: #0f0f0f;
+    background-color: #010813;
     width: 100%;
 }
 
@@ -258,13 +257,10 @@ footer {
     display: flex;
     justify-content: center;
     position: relative;
-    background: url(../imagens/pastor-viajem.jpg) center/cover no-repeat;
+    background: url(../imagens/fundo-ministerio1.jpg) center/cover no-repeat;
     height: 500px;
     width: 100%;
 }
-
-
-
 .container-imagem {
     position: relative;
     width: 100%;
