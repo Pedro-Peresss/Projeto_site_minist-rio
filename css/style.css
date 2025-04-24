@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,700;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url(https://db.onlinewebfonts.com/c/8d978df77a682ad84086496d375273fa?family=Concord+W00+Regular);
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -53,6 +48,8 @@ header::after {
 }
 
 .botoes {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,11 +62,10 @@ header::after {
 }
 
 .botao {
-    max-height: 50px;
+    max-height: 40px;
     background-color: #000000;
     color: rgb(202, 168, 75);
-    font-family: "Concord W00 Regular";
-    font-size: 14px;
+    font-size: 12px;
     cursor: pointer;
     padding: 8px;
     border-top: 4px;
@@ -145,7 +141,7 @@ header {
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 30px;
-    font-family: "Goblin One", serif;
+    font-family: "Poppins", sans-serif;
     color: rgb(202, 168, 75);
     text-align: center;
     padding: 0 5%;
@@ -164,7 +160,7 @@ header {
 
 .texto,
 .texto-final {
-    font-family: "Raleway", sans-serif;
+    font-family: "Merriweather Sans", sans-serif;
     font-size: 18px;
     font-weight: bold;
     display: flex;
@@ -180,7 +176,7 @@ header {
 
 
 .frase-final {
-    font-family: "Goblin One", serif;
+
     color: rgb(202, 168, 75);
     font-size: 24px;
     text-align: center;
@@ -211,11 +207,11 @@ header {
     border: 2px solid rgb(202, 168, 75);
 }
 .subtitulo {
+    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: "Goblin One", serif;
     color: rgb(202, 168, 75);
     text-align: center;
     padding: 0 5%;
@@ -233,7 +229,6 @@ header {
     border-radius: 50px;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.7);
     font-size: 15px;
-    font-family: "Goblin One", serif;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -280,17 +275,65 @@ footer {
     margin-bottom: 20px;
 }
 
-.container-titulo {
+.container-titulo-imagem {
     position: absolute;
     top: 0;
     width: 100%;
     max-width: 320px;
     height: 169px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.6);
+    background-repeat: no-repeat;
+    background-size: 200px 169px;
+    background-position: center;
     z-index: 1;
 }
+.img-ministerio{
+    height: 181px;
+    width: 905px;
+    background-image: url(../imagens/fotos-background/fundo-ministerio1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.monte{
+    background-image: url(../imagens/fotos-background/oracao-no-monte.png);
+}
+.intercessao{
+    background-image: url(../imagens/fotos-background/intercessao.png);
+}
+.diaconato{
+    background-image: url(../imagens/fotos-background/diaconato.png);
+}
+.louvor{
+    background-image: url(../imagens/fotos-background/louvor.png);
+}
+.discipulado{
+    background-image: url(../imagens/fotos-background/discipulado.png);
+}
+.casais{
+    background-image: url(../imagens/fotos-background/casais.png);
+}
+.acolhimento{
+    background-image: url(../imagens/fotos-background/acolhimento.png);
+}
 
-.imagem-ministerio img {
+.co-ral {
+    background-image: url(../imagens/fotos-background/coral.png);
+}
+.manutancao{
+    background-image: url(../imagens/fotos-background/manutancao.png);
+}
+.coreografia{
+    background-image: url(../imagens/fotos-background/coreografia.png);
+}
+.homens{
+    background-image: url(../imagens/fotos-background/homens.png);
+}
+.mulheres{
+    background-image: url(../imagens/fotos-background/mulheres.png);
+}
+
+
+.imagem-ministerio{
     width: 100%;
     height: auto;
     max-width: 960px;
@@ -303,30 +346,45 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .titulo-ministerio {
+    font-family: "Poppins", sans-serif;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 20px;
+    left: 40px;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: "Special Gothic Expanded One", sans-serif;
-    font-size: 3.5vw;
+    font-size: 3vw;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 100%;
 }
+.subtitulo-ministerio{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.texto-ministerio{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+#diaconato{
+    font-size: 14px;
+}
 
 .container-texto-ministerios {
+    font-family: "Poppins", sans-serif;
     position: absolute;
     top: 0;
     left: 322px;
     height: 176px;
     width: calc(100% - 322px);
     z-index: 1;
-    color: #e0e0e0;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -412,6 +470,7 @@ footer {
     }
 
     .titulo-ministerio {
+        font-family: "Poppins", sans-serif;
         font-size: 5vw;
     }
 
@@ -434,10 +493,10 @@ footer {
     list-style-type: none;
 }
 .lista li{
+    font-family: "Poppins", sans-serif;
     padding: 20px;
     margin: 4px;
     margin-bottom: 20px;
-    font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
@@ -446,7 +505,6 @@ footer {
 strong {
     color: rgb(202, 168, 75);
     font-size: 20px;
-    font-family: "Concord W00 Regular";
     text-shadow: 2px 2px 1px black;
 }
 
@@ -492,6 +550,7 @@ strong {
 
     .titulo,
     .subtitulo {
+        font-family: "Poppins", sans-serif;
         font-size: 20px;
     }
 
@@ -510,6 +569,7 @@ strong {
     }
 
     .titulo-ministerio {
+        font-family: "Poppins", sans-serif;
         position: relative;
         transform: none;
         left: auto;
