@@ -50,7 +50,6 @@ header::after {
 }
 
 .botoes {
-    font-family: "Poppins", sans-serif;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -143,7 +142,6 @@ header {
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 30px;
-    font-family: "Poppins", sans-serif;
     color: rgb(202, 168, 75);
     text-align: center;
     padding: 0 5%;
@@ -209,7 +207,6 @@ header {
     border: 2px solid rgb(202, 168, 75);
 }
 .subtitulo {
-    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -350,7 +347,6 @@ footer {
 }
 
 .titulo-ministerio {
-    font-family: "Poppins", sans-serif;
     position: absolute;
     top: 20px;
     left: 40px;
@@ -362,7 +358,6 @@ footer {
     width: 100%;
 }
 .subtitulo-ministerio{
-    font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
 .texto-ministerio{
@@ -376,7 +371,6 @@ footer {
 }
 
 .container-texto-ministerios {
-    font-family: "Poppins", sans-serif;
     position: absolute;
     top: 0;
     left: 322px;
@@ -498,7 +492,6 @@ footer {
     }
 
     .titulo-ministerio {
-        font-family: "Poppins", sans-serif;
         font-size: 5vw;
     }
 
@@ -562,7 +555,6 @@ strong {
 
     .titulo,
     .subtitulo {
-        font-family: "Poppins", sans-serif;
         font-size: 20px;
     }
 
@@ -581,7 +573,6 @@ strong {
     }
 
     .titulo-ministerio {
-        font-family: "Poppins", sans-serif;
         position: relative;
         transform: none;
         left: auto;
