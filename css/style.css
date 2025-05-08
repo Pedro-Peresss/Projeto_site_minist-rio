@@ -6,9 +6,12 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
+html{
+    font-family: "Poppins", sans-serif;
+}
 
 main {
+    margin-top: 60px;
     overflow-x: hidden;
     background-color: #010813;
     width: 100%;
@@ -421,6 +424,35 @@ footer {
     transform: scale(0.8);
 }
 
+.agenda{
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+    color: black;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 20px;
+}
+
+.agenda div{
+    max-width: 300px;
+    background-color: rgb(17, 206, 240);
+    padding: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgb(202, 168, 75);
+}
+
+.agenda p{
+    padding: 20px;
+    border-top: 1px solid rgb(202, 168, 75);
+}
+
 /* Media Queries para Responsividade */
 @media screen and (max-width: 1024px) {
     .container-texto-ministerios {
@@ -480,22 +512,6 @@ footer {
     }
 }
 
-.lista {
-    border: 2px solid rgb(202, 168, 75);
-    border-radius: 5px;
-    color: #000000;
-    margin: 45px;
-    background-color: rgba(255, 255, 255, 0.6);
-    list-style-type: none;
-}
-.lista li{
-    font-family: "Poppins", sans-serif;
-    padding: 20px;
-    margin: 4px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
 
 
 strong {
