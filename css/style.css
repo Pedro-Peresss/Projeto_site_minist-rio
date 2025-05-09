@@ -518,6 +518,37 @@ footer {
     display: block;
 }
 
+.doacao{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+.img-doacao{
+    max-width: 800px;
+    position: relative;
+}
+.img-doacao img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.img-doacao h3{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    bottom: 60%;
+}
+.info-doacao{
+    max-width: 40vw;
+    padding: 30px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: rgb(18, 204, 250);
+}
+
 /* Media Queries para Responsividade */
 @media screen and (max-width: 1024px) {
     .container-texto-ministerios {
