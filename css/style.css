@@ -446,7 +446,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 25px;
+    padding: 0 20px 20px 20px;
 }
 
 .foto-agenda {
@@ -470,7 +470,7 @@ footer {
     content: url('../imagens/seta_preta.png');
     position: absolute;
     height: 35px;
-    bottom: 40px;
+    bottom: 60px;
     animation: downarrow 0.6s infinite alternate ease-in-out;
 }
 
