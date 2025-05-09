@@ -6,7 +6,8 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
+
+html {
     font-family: "Poppins", sans-serif;
 }
 
@@ -45,8 +46,9 @@ header::after {
     pointer-events: none;
 }
 
-.logo img { 
-    height: 100px; /* mesmo tamanho da imagem */
+.logo img {
+    height: 100px;
+    /* mesmo tamanho da imagem */
 }
 
 .botoes {
@@ -195,17 +197,20 @@ header {
 .video iframe {
     max-width: 100%;
 }
-.container-fotos{
+
+.container-fotos {
     width: 100%;
     height: 250px;
     display: flex;
     justify-content: center;
 }
-.tamanho-fotos{
+
+.tamanho-fotos {
     max-width: 25%;
     margin: 5px;
     border: 2px solid rgb(202, 168, 75);
 }
+
 .subtitulo {
     display: flex;
     justify-content: center;
@@ -239,7 +244,7 @@ header {
     background: linear-gradient(to right, rgb(3, 238, 247), rgb(19, 2, 250));
 }
 
-.botao-venha-conhecer span{
+.botao-venha-conhecer span {
     color: aliceblue;
 }
 
@@ -265,6 +270,7 @@ footer {
     height: 500px;
     width: 100%;
 }
+
 .container-imagem {
     position: relative;
     width: 100%;
@@ -287,53 +293,65 @@ footer {
     background-position: center;
     z-index: 1;
 }
-.img-ministerio{
+
+.img-ministerio {
     height: 181px;
     width: 905px;
     background-image: url(../imagens/fundo-ministerio1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.monte{
+
+.monte {
     background-image: url(../imagens/fotos-background/oracao-no-monte.png);
 }
-.intercessao{
+
+.intercessao {
     background-image: url(../imagens/fotos-background/intercessao.png);
 }
-.diaconato{
+
+.diaconato {
     background-image: url(../imagens/fotos-background/diaconato.png);
 }
-.louvor{
+
+.louvor {
     background-image: url(../imagens/fotos-background/louvor.png);
 }
-.discipulado{
+
+.discipulado {
     background-image: url(../imagens/fotos-background/discipulado.png);
 }
-.casais{
+
+.casais {
     background-image: url(../imagens/fotos-background/casais.png);
 }
-.acolhimento{
+
+.acolhimento {
     background-image: url(../imagens/fotos-background/acolhimento.png);
 }
 
 .co-ral {
     background-image: url(../imagens/fotos-background/coral.png);
 }
-.manutancao{
+
+.manutancao {
     background-image: url(../imagens/fotos-background/manutancao.png);
 }
-.coreografia{
+
+.coreografia {
     background-image: url(../imagens/fotos-background/coreografia.png);
 }
-.homens{
+
+.homens {
     background-image: url(../imagens/fotos-background/homens.png);
 }
-.mulheres{
+
+.mulheres {
     background-image: url(../imagens/fotos-background/mulheres.png);
 }
 
 
-.imagem-ministerio{
+.imagem-ministerio {
     width: 100%;
     height: auto;
     max-width: 960px;
@@ -361,16 +379,18 @@ footer {
     text-align: center;
     width: 100%;
 }
-.subtitulo-ministerio{
+
+.subtitulo-ministerio {
     font-weight: bold;
 }
-.texto-ministerio{
+
+.texto-ministerio {
     font-size: 16px;
     font-weight: 400;
     text-transform: lowercase;
 }
 
-#diaconato{
+#diaconato {
     font-size: 14px;
 }
 
@@ -421,14 +441,15 @@ footer {
 .botao-ministerio:hover {
     transform: scale(0.8);
 }
-.container-foto-agenda{
+
+.container-foto-agenda {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 25px;
 }
 
-.foto-agenda{
+.foto-agenda {
     border-radius: 10px;
     position: relative;
     display: flex;
@@ -438,13 +459,14 @@ footer {
     min-height: 300px;
 }
 
-.foto-agenda img{
+.foto-agenda img {
     width: 100%;
     max-height: 100%;
     border-radius: 10px;
     border: 1px solid rgb(202, 168, 75);
 }
-.foto-agenda::after{
+
+.foto-agenda::after {
     content: url('../imagens/seta_preta.png');
     position: absolute;
     height: 35px;
@@ -454,13 +476,18 @@ footer {
 
 
 @-webkit-keyframes downarrow {
-    0% {-webkit-transform: translateY(0);
-    opacity: 0.4;}
-    100%{-webkit-transform: translateY(0.4em);
-    opacity: 0.8;}
+    0% {
+        -webkit-transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: translateY(0.4em);
+        opacity: 0.8;
+    }
 }
 
-.agenda{
+.agenda {
     display: flex;
     min-width: 100%;
     min-height: 100vh;
@@ -471,7 +498,7 @@ footer {
     padding: 20px;
 }
 
-.agenda div{
+.agenda div {
     max-width: 300px;
     max-height: 450px;
     background-color: rgb(17, 206, 240);
@@ -485,14 +512,16 @@ footer {
     border: 1px solid rgb(202, 168, 75);
 }
 
-.agenda p{
+.agenda p {
     padding: 20px;
     border-top: 1px solid rgb(202, 168, 75);
 }
-.main-endereco{
+
+.main-endereco {
     background-color: #f7f9fa;
 }
-.container-endereco{
+
+.container-endereco {
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -501,49 +530,53 @@ footer {
     padding: 40px;
     gap: 20px;
 }
-.endereco{
+
+.endereco {
     max-width: 500px;
     max-height: 570px;
     padding: 30px;
 }
-.endereco h2{
+
+.endereco h2 {
     padding: 0 0 20px 0;
 }
-.localizacao{
+
+.localizacao {
     max-width: 500px;
     max-height: 570px;
 }
-.localizacao img{
+
+.localizacao img {
     width: 100%;
     display: block;
 }
 
-.doacao{
+.doacao {
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: space-around;
 }
 
-.img-doacao{
+.img-doacao {
     max-width: 800px;
     position: relative;
 }
 
-.img-doacao img{
+.img-doacao img {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.img-doacao h3{
+.img-doacao h3 {
     position: absolute;
     color: rgb(255, 255, 255);
     text-align: center;
     bottom: 60%;
 }
 
-.info-doacao{
+.info-doacao {
     max-width: 40vw;
     padding: 30px;
     display: flex;
@@ -558,21 +591,25 @@ footer {
         left: 280px;
         width: calc(100% - 280px);
     }
-    .container-fotos{
+
+    .container-fotos {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         height: fit-content;
     }
-    .tamanho-fotos{
+
+    .tamanho-fotos {
         min-width: 300px;
     }
-    .final-pagina-inicial{
+
+    .final-pagina-inicial {
         display: flex;
         flex-direction: column;
     }
-    .container-imagem{
+
+    .container-imagem {
         width: auto;
         max-width: 90%;
     }
